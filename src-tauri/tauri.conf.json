@@ -1,10 +1,10 @@
 {
   "package": {
-    "productName": "my-first-tauri-app",
+    "productName": "vocabulary-trainer",
     "version": "0.1.0"
   },
   "build": {
-    "distDir": "../dist/my-first-tauri-app",
+    "distDir": "../dist/vocabulary-trainer",
     "devPath": "http://localhost:4200",
     "beforeDevCommand": "npm run start",
     "beforeBuildCommand": "npm run build"
@@ -13,7 +13,7 @@
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "com.tauri.dev",
+      "identifier": "privat.funprogrammer.vocabularytrainer",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
@@ -24,7 +24,7 @@
       "resources": [],
       "externalBin": [],
       "copyright": "",
-      "category": "DeveloperTool",
+      "category": "Education",
       "shortDescription": "",
       "longDescription": "",
       "deb": {

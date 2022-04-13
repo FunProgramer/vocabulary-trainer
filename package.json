@@ -1,13 +1,14 @@
 {
-  "name": "my-first-tauri-app",
-  "version": "0.0.0",
+  "name": "vocabulary-trainer",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "tauricon": "tauricon"
   },
   "private": true,
   "dependencies": {
@@ -29,6 +30,7 @@
     "@angular/cli": "~13.3.2",
     "@angular/compiler-cli": "~13.3.0",
     "@tauri-apps/cli": "^1.0.0-rc.8",
+    "@tauri-apps/tauricon": "github:tauri-apps/tauricon",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "jasmine-core": "~4.0.0",
