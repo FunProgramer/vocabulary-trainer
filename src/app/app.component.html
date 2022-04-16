@@ -1,1 +1,21 @@
-<div></div>
+<div class="min-vh-100 d-flex align-items-center"
+    style="background-image: url('https://bing.biturl.top/?mkt=en-US&format=image');">
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="fw-light">
+                    {{stepTitle}}
+                </div>
+                <div class="my-4">
+                    <div *ngIf="error">
+                        <div class="alert alert-danger">
+                            <h5 class="alert-heading">Error</h5>
+                            <span [innerHTML]="error"></span>
+                        </div>
+                    </div>
+                    <app-file-selector *ngIf="!vocabularyCollection" (fileChange)="onFileChange($event)"></app-file-selector>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

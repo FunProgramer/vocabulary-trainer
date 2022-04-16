@@ -1,0 +1,13 @@
+<div>
+    <div class="text-center">
+        <img src="assets/app-icon.png" draggable="false" />
+        <h3 class="display-3">Welcome to Vocabulary Trainer!</h3>
+        <p>To learn vocabularies choose a vocabulary collection file from this computer.</p>
+    </div>
+    <div class="mx-auto" style="width: 450px;">
+        <label for="{{collectionFileInput}}" class="form-label">
+            Vocabulary Collection File (ends with '.voc.json')
+        </label>
+        <input class="form-control" (change)="onFileChoosed()" type="file" #collectionFileInput />
+    </div>
+</div>

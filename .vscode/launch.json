@@ -15,6 +15,12 @@
       "request": "launch",
       "preLaunchTask": "npm: test",
       "url": "http://localhost:9876/debug.html"
+    },
+    {
+      "name": "tauri dev",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run tauri dev"
     }
   ]
 }

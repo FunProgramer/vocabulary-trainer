@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { FileSelectorComponent } from './file-selector/file-selector.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FileSelectorComponent
   ],
   imports: [
     BrowserModule
