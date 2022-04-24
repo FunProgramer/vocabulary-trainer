@@ -7,7 +7,7 @@ import { Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angu
 })
 export class FileSelectorComponent implements OnInit {
 
-  @ViewChild('collectionFileInput') collectionFileInput?: HTMLInputElement;
+  @ViewChild('collectionFileInput') collectionFileInput?: {nativeElement: HTMLInputElement};
 
   @Output() fileChange = new EventEmitter<File>();
 
@@ -17,8 +17,8 @@ export class FileSelectorComponent implements OnInit {
   }
 
   onFileChoosed() {
-    if (this.collectionFileInput && this.collectionFileInput.files !== null) {
-      this.fileChange.emit(this.collectionFileInput.files[0]);
+    if (this.collectionFileInput && this.collectionFileInput.nativeElement.files !== null && this.collectionFileInput.nativeElement.files.length !== 0) {
+      this.fileChange.emit(this.collectionFileInput.nativeElement.files[0]);
       console.log("File Choose Event Emitted")
     }
   }
