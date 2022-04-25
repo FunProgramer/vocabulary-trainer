@@ -4,3 +4,11 @@
     background-size: cover;
     background-image: url('https://bing.biturl.top/?mkt=en-US&format=image'), url('/assets/vaibhav-pixels-Q56vCF_MaiY-unsplash.jpg');
 }
+
+.underline-on-hover {
+    text-decoration: none;
+}
+
+.underline-on-hover:hover {
+    text-decoration: underline;
+}

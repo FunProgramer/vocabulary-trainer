@@ -8,8 +8,6 @@ import { Vocabulary } from './vocabulary';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  stepTitle = 'Welcome: Select vocabulary collection';
   error?: string;
 
   vocabularyCollection?: VocabularyCollection;
@@ -33,7 +31,7 @@ export class AppComponent {
           "<li>'firstLanguage',</li>" +
           "<li>'secondLanguage',</li>" +
           "<li>'vocabularies'.</li></ul>" +
-          "Or the file also contains no vocabularies";
+          "Or the file (also) contains no vocabularies";
       }
     });
 

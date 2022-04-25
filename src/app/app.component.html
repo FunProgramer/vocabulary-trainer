@@ -3,8 +3,11 @@
         <div class="card">
             <div class="card-body">
                 <div class="fw-light">
-                    {{stepTitle}}
+                    {{vocabularyCollection ? 'Learning: ' + vocabularyCollection.displayName : 'Welcome: Select vocabulary collection'}}
                 </div>
+                <a href="" *ngIf="vocabularyCollection" (click)="vocabularyCollection = undefined" class="link-secondary underline-on-hover">
+                    <i class="bi bi-arrow-left me-1"></i>Select another vocabulary collection file
+                </a>
                 <div class="my-4">
                     <app-file-selector *ngIf="!vocabularyCollection" (fileChange)="onFileChange($event)">
                     </app-file-selector>
